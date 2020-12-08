@@ -3,11 +3,13 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 import sys
 import time
+import logging
 
 
 class Interface:
     def __init__(self, username, password, abgabe_url, debug=False):
         self.url = "https://lernplattform.mebis.bayern.de"
+        self.logger = logging.getLogger("Interface")
         self.username = username
         self.password = password
         self.abgabe_url = abgabe_url
@@ -17,6 +19,7 @@ class Interface:
 
     def start_driver(self):
         # starts the driver
+        logger = self.logger
         options = webdriver.ChromeOptions()
         if not self.debug:
             # either show or not show the chrome-driver
@@ -27,12 +30,15 @@ class Interface:
         options.add_argument("start-maximized")
         options.add_argument('--disable-dev-shm-usage')
         options.add_experimental_option("excludeSwitches", ["enable-logging"])
+        logger.debug("Adding options successfull")
 
         # routes the chromedriver output to the corresponding nul output
         if sys.platform.startswith("win"):
             self.driver = webdriver.Chrome("chromedriver.exe", options=options, service_log_path='NUL')
         else:
             self.driver = webdriver.Chrome("chromedriver", options=options, service_log_path='/dev/null')
+
+        logger.debug(f"Python {sys.version} on {sys.platform}")
 
         # goes to self.url
         self.driver.get(self.url)
@@ -60,11 +66,15 @@ class Interface:
         action.perform()
         time.sleep(0.5)
 
+        self.logger.info("Erfolgreich in Mebis eingeloggt!")
+
     def download_page(self, path=None):
         # checks if a specific path is given, if not, its just downloading the webpage to the main directory
+        logger = self.logger
         if path is None:
             with open("page.html", 'w+', encoding='utf-8') as f:
                 f.write(self.driver.page_source)
+        logger.info("Seite wurde erfolgreich heruntergeladen.")
 
     def main_program(self):
         # main program
@@ -74,4 +84,7 @@ class Interface:
 
     def close_driver(self):
         # closes the driver
+        logger = self.logger
+        logger.info("Webbrowser wurde geschlossen.")
         self.driver.close()
+
