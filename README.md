@@ -1,2 +1,2 @@
-# MebisStonks
-haha mebis um 8 anwesenheitscheck abhacken obwohl man noch pennt go brrrrrrrrrrrrrrrrrrrr
+Du willst länger als 8 schlafen?
+Lass den bot dich doch auf mebis anmelden und dann den anwesenheitscheck für dich durchführen
