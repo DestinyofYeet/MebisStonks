@@ -6,8 +6,8 @@ Dieses Projekt ist aus Protest enstanden um zu schlafen (weil keiner bock hat um
 
 Die Installation ist recht simpel.
 
-1. Laden sie sich das git-cli für (windows) [https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.3/Git-2.29.2.3-32-bit.exe] herunter.
-2. Laden sie sich (Python 3.8) [https://www.python.org/ftp/python/3.8.6/python-3.8.6.exe] für windows herunter.
+1. Laden sie sich das git-cli für [windows] (https://github.com/git-for-windows/git/releases/download/v2.29.2.windows.3/Git-2.29.2.3-32-bit.exe) herunter.
+2. Laden sie sich [Python 3.8] (https://www.python.org/ftp/python/3.8.6/python-3.8.6.exe) für windows herunter.
 3. Installieren sie dieses, sie müssen eigentlich nur immer wieder auf 'Next' clicken, bis es sich installiert hat.
 4. Suchen sie sich einen Speicherort für den bot, machen sie einen rechtsklick in diesen ordner und clicken sie auf 'Git Bash Here'. 
 5. In dem erschienen Fenster diesen command eingeben `git clone https://github.com/DestinyofYeet/MebisStonks.git MebisStonks -b master` und drücken sie die enter taste.
