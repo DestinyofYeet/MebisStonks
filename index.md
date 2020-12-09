@@ -1,6 +1,6 @@
 ## MebisStonks Projekt
 
-Dieses Projekt ist aus Protest enstanden um zu schlafen (weil keiner bock hat um 8 aufzustehen nur um dieses ding abzuhacken).
+Dieses Projekt ist aus Protest enstanden um zu schlafen (weil keiner bock hat um 8 aufzustehen nur um dieses ding abzuhaken).
 
 ### Installation
 
