@@ -34,9 +34,9 @@ class Interface:
 
         # routes the chromedriver output to the corresponding nul output
         if sys.platform.startswith("win"):
-            self.driver = webdriver.Chrome("chromedriver.exe", options=options, service_log_path='NUL')
+            self.driver = webdriver.Chrome("tools/chromedriver.exe", options=options, service_log_path='NUL')
         else:
-            self.driver = webdriver.Chrome("chromedriver", options=options, service_log_path='/dev/null')
+            self.driver = webdriver.Chrome("tools/chromedriver", options=options, service_log_path='/dev/null')
 
         logger.debug(f"Python {sys.version} on {sys.platform}")
 
