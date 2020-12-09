@@ -11,7 +11,7 @@ Die Installation ist recht simpel.
 3. Laden sie sich [Python 3.8](https://www.python.org/ftp/python/3.8.6/python-3.8.6.exe) für windows herunter.
 4. Installieren sie dieses, sie müssen eigentlich nur immer wieder auf 'Next' clicken, bis es sich installiert hat.
 5. Suchen sie sich einen Speicherort für den bot, machen sie einen rechtsklick in diesen ordner und clicken sie auf 'Git Bash Here'. 
-6. In dem erschienen Fenster diesen command eingeben `git clone https://github.com/DestinyofYeet/MebisStonks.git MebisStonks -b master` und drücken sie die enter taste.
+6. In dem erschienen Fenster diesen command eingeben `git clone https://github.com/DestinyofYeet/MebisStonks.git` und drücken sie die enter taste.
 7. Konfigurieren sie den Bot:
   - Sie müssen in den Ordner namens 'config' gehen und die Datei 'Benutzerdaten.ini' öffnen. Dort tragen sie ihren Benutzername und ihr passwort für mebis ein. Speichern 
   sie die Datei und schließen sie den editor wieder.
